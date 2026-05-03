@@ -1,0 +1,348 @@
+.admin-page {
+	min-height: 100vh;
+	padding: 40px 0 64px;
+	background:
+		radial-gradient(
+			circle at top right,
+			rgba(88, 130, 255, 0.18),
+			transparent 28%
+		),
+		linear-gradient(180deg, #04142f 0%, #071c3d 100%);
+}
+
+.admin-shell {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.admin-hero {
+	padding: 32px;
+	border: 1px solid rgba(124, 156, 255, 0.16);
+	border-radius: 28px;
+	background: rgba(7, 18, 45, 0.72);
+	backdrop-filter: blur(16px);
+	box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
+}
+
+.admin-eyebrow {
+	display: inline-block;
+	margin-bottom: 10px;
+	color: #8fb3ff;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.admin-hero h1 {
+	margin: 0 0 10px;
+	color: #ffffff;
+	font-size: 48px;
+	line-height: 1.05;
+}
+
+.admin-hero p {
+	margin: 0;
+	max-width: 760px;
+	color: #b7c7ef;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+.admin-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.admin-stat-card {
+	padding: 22px 24px;
+	border: 1px solid rgba(124, 156, 255, 0.14);
+	border-radius: 24px;
+	background: rgba(10, 24, 58, 0.88);
+	box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+}
+
+.admin-stat-card span {
+	display: block;
+	margin-bottom: 8px;
+	color: #9db2df;
+	font-size: 14px;
+}
+
+.admin-stat-card strong {
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 800;
+}
+
+.admin-tabs {
+	display: inline-flex;
+	gap: 10px;
+	padding: 8px;
+	width: fit-content;
+	border: 1px solid rgba(124, 156, 255, 0.14);
+	border-radius: 18px;
+	background: rgba(9, 23, 55, 0.82);
+}
+
+.admin-tabs button {
+	border: none;
+	border-radius: 12px;
+	padding: 12px 18px;
+	background: transparent;
+	color: #b8c7ea;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.admin-tabs button.active {
+	background: linear-gradient(135deg, #5f7fff 0%, #7d5cff 100%);
+	color: white;
+	box-shadow: 0 10px 24px rgba(108, 97, 255, 0.28);
+}
+
+.admin-toolbar {
+	display: grid;
+	grid-template-columns: 1fr 220px;
+	gap: 16px;
+}
+
+.admin-toolbar input,
+.admin-toolbar select {
+	width: 100%;
+	height: 52px;
+	padding: 0 16px;
+	border: 1px solid rgba(130, 155, 226, 0.2);
+	border-radius: 16px;
+	background: rgba(7, 18, 45, 0.78);
+	color: #ffffff;
+	font-size: 15px;
+	outline: none;
+}
+
+.admin-toolbar input::placeholder {
+	color: #8ea4d5;
+}
+
+.admin-toolbar input:focus,
+.admin-toolbar select:focus {
+	border-color: rgba(129, 158, 255, 0.48);
+	box-shadow: 0 0 0 4px rgba(94, 125, 255, 0.12);
+}
+
+.admin-alert,
+.admin-empty,
+.admin-map-panel {
+	padding: 20px 22px;
+	border: 1px solid rgba(124, 156, 255, 0.14);
+	border-radius: 24px;
+	background: rgba(10, 24, 58, 0.88);
+	color: #d7e3ff;
+}
+
+.admin-alert {
+	border-color: rgba(255, 115, 115, 0.24);
+	color: #ffd2d2;
+	background: rgba(61, 14, 27, 0.72);
+}
+
+.admin-request-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.request-card {
+	padding: 22px;
+	border: 1px solid rgba(124, 156, 255, 0.14);
+	border-radius: 26px;
+	background: linear-gradient(
+		180deg,
+		rgba(10, 24, 58, 0.96) 0%,
+		rgba(7, 19, 44, 0.96) 100%
+	);
+	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+}
+
+.request-card-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 16px;
+}
+
+.request-card-top h3 {
+	margin: 10px 0 0;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 1.25;
+}
+
+.request-id {
+	padding: 8px 12px;
+	border-radius: 999px;
+	background: rgba(132, 154, 222, 0.12);
+	color: #b6c8f4;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.request-badge {
+	display: inline-flex;
+	align-items: center;
+	min-height: 30px;
+	padding: 0 12px;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 800;
+}
+
+.request-badge.pending {
+	background: rgba(255, 195, 73, 0.14);
+	color: #ffd25a;
+}
+
+.request-badge.progress {
+	background: rgba(87, 144, 255, 0.16);
+	color: #8bb0ff;
+}
+
+.request-badge.completed {
+	background: rgba(56, 216, 143, 0.16);
+	color: #62ecad;
+}
+
+.request-description {
+	margin: 0 0 18px;
+	color: #c7d5f3;
+	line-height: 1.65;
+}
+
+.request-meta {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 14px;
+	margin-bottom: 18px;
+}
+
+.request-meta div {
+	padding: 14px;
+	border-radius: 18px;
+	background: rgba(255, 255, 255, 0.03);
+}
+
+.request-meta span {
+	display: block;
+	margin-bottom: 6px;
+	color: #8fa7db;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+
+.request-meta strong {
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 1.45;
+}
+
+.request-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.request-actions button {
+	border: none;
+	border-radius: 14px;
+	padding: 11px 15px;
+	font-size: 14px;
+	font-weight: 800;
+	cursor: pointer;
+	transition:
+		transform 0.18s ease,
+		opacity 0.18s ease,
+		box-shadow 0.18s ease;
+}
+
+.request-actions button:hover {
+	transform: translateY(-1px);
+}
+
+.request-actions button:disabled {
+	opacity: 0.55;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.ghost-btn {
+	background: rgba(255, 255, 255, 0.08);
+	color: #dbe6ff;
+}
+
+.primary-btn {
+	background: linear-gradient(135deg, #4f7cff 0%, #6d73ff 100%);
+	color: #ffffff;
+	box-shadow: 0 12px 24px rgba(88, 111, 255, 0.28);
+}
+
+.success-btn {
+	background: linear-gradient(135deg, #1fbf75 0%, #42d59a 100%);
+	color: #081b1a;
+	box-shadow: 0 12px 24px rgba(51, 196, 127, 0.24);
+}
+
+.danger-btn {
+	background: linear-gradient(135deg, #ff6d7a 0%, #ff4d61 100%);
+	color: #ffffff;
+	box-shadow: 0 12px 24px rgba(255, 92, 115, 0.22);
+}
+
+.admin-map-panel {
+	padding: 16px;
+}
+
+@media (max-width: 1100px) {
+	.admin-stats-grid,
+	.admin-request-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 760px) {
+	.admin-page {
+		padding-top: 24px;
+	}
+
+	.admin-hero {
+		padding: 22px;
+	}
+
+	.admin-hero h1 {
+		font-size: 34px;
+	}
+
+	.admin-stats-grid,
+	.admin-request-grid,
+	.request-meta,
+	.admin-toolbar {
+		grid-template-columns: 1fr;
+	}
+
+	.request-card-top {
+		flex-direction: column;
+	}
+
+	.admin-tabs {
+		width: 100%;
+	}
+
+	.admin-tabs button {
+		flex: 1;
+	}
+}

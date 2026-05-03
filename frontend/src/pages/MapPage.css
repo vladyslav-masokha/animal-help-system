@@ -1,0 +1,60 @@
+.map-shell {
+	border-radius: 22px;
+	overflow: hidden;
+}
+
+.map-fallback {
+	padding: 18px;
+	border-radius: 18px;
+	background: rgba(255, 191, 71, 0.12);
+	color: #ffe2a5;
+	border: 1px solid rgba(255, 196, 87, 0.2);
+}
+
+.map-popup {
+	max-width: 260px;
+	padding: 4px 2px 2px;
+	color: #1b2440;
+}
+
+.map-popup h3 {
+	margin: 10px 0 8px;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.map-popup p {
+	margin: 0 0 10px;
+	color: #31405f;
+	line-height: 1.5;
+}
+
+.map-popup-meta {
+	margin-top: 6px;
+	font-size: 14px;
+}
+
+.map-status {
+	display: inline-flex;
+	align-items: center;
+	min-height: 28px;
+	padding: 0 10px;
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 800;
+}
+
+.map-status.pending {
+	background: rgba(255, 195, 73, 0.18);
+	color: #9c6b00;
+}
+
+.map-status.progress {
+	background: rgba(87, 144, 255, 0.18);
+	color: #2454c5;
+}
+
+.map-status.completed {
+	background: rgba(56, 216, 143, 0.18);
+	color: #0b8f57;
+}
