@@ -197,7 +197,7 @@ animal-help-system/
 ### 1. Клонування проєкту
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/vladyslav-masokha/animal-help-system.git
 cd animal-help-system
 ```
 
@@ -297,7 +297,6 @@ http://localhost:5173
 |---|---|---|
 | Admin | admin@animalhelp.com | Admin123! |
 | Volunteer | volunteer@animalhelp.com | Volunteer123! |
-| User | user@animalhelp.com | User123! |
 
 ## 📡 Основні API endpoints
 
